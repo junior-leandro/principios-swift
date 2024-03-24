@@ -1,5 +1,8 @@
 //Declaração deConstantes e Variáveis
 
+// let = constante
+// var = variavel
+
 let maximumNumberOfLoginAttempts = 10 // Maximo de tentativas de login
 var currentLoginAttempts = 0 // Tentativa atual
 
