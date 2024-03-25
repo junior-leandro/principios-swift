@@ -58,9 +58,31 @@ if let myNumber{
 print("Meu numero é \(myNumber)")
 } */
 
+// ambas as expressões abaixo funcionam
 
 if let firstNumber = Int("4"), let secondNumber = Int("42"), firstNumber < secondNumber && secondNumber < 100 {
     print("\(firstNumber) < \(secondNumber) < 100")    
 }
 
-//if let firstNumber = int("4")
+if let firstNumber = int("4"){
+    if let secondNumber = Int("42"){
+        firstNumber < secondNumber && secondNumber < 100 {
+            print("\(firstNumber) < \(secondNumber) < 100") 
+    }
+}
+
+// Unwrapped Optional Implicitamente
+
+let possibleString: String? = "Uma String opcional"
+let forcedString: String = possibleString! // requer um ! para fazer o force
+let assumedString: String! = "Uma String Opcional desempacotada implicitamente"
+let implicitString: String = assumedString // não precisa da exclamação
+let optionalString = assumedString // o tipo de optionalString "String?" e o assumedString não é desmpacotado a força
+
+if assumedString != nil {
+    print(assumedString!)
+}
+
+if let definiteString = assumedString {
+    print(definiteString)
+    }
