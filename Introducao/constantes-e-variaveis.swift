@@ -18,9 +18,9 @@ var frendlyWelcome = "Bonjour!"
 
 //Nomenclaturas
 
-// var 1teste = "teste"        // não aceito
+var 1teste = "teste"        // não aceito
 var teste1 = "teste" // aceito
-// let public = "geral"       // não aceito
+let public = "geral"       // não aceito
 let `public` = "geral" // aceito
 
 

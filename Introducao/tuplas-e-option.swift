@@ -3,18 +3,17 @@
 let http404Error = (404, "Not Found") // tipo Int e String
 let (statusCode, statusMessage) = http404Error
 
-//print ("O Status é \(statusCode)")
-//print ("A Mensagem é \(statusMessage)")
+print ("O Status é \(statusCode)")
+print ("A Mensagem é \(statusMessage)")
 
 let (justStatus, _) = http404Error
-//print ("O Status é \(http404Error.0)")
-
-//print ("O Status é \(statusCode)")
-//print ("A Mensagem é \(http404Error.1)")
+print ("O Status é \(http404Error.0)")
+print ("O Status é \(statusCode)")
+print ("A Mensagem é \(http404Error.1)")
 
 let http200Status = (statusCode: 200, description: "Ok")
-//print("StatusCode é \(http200Status.statusCode)")
-//print("Description é \(http200Status.description)")
+print("StatusCode é \(http200Status.statusCode)")
+print("Description é \(http200Status.description)")
 
 
 // Optionals
@@ -22,7 +21,7 @@ let http200Status = (statusCode: 200, description: "Ok")
 
 let possibleNumber = "123"
 let convertedNumber = Int(possibleNumber) // convertNumbr é inferido como sendo do tipo "Int?" ou "Int opcional"
-//print(convertedNumber)
+/rint(convertedNumber)
 
 // Options Nil
 
@@ -46,17 +45,18 @@ if let actualNumber = Int(possibleNumber) {
     print("A String \(possibleNumber) não pode ser convertido em um numero inteiro")
 }
 
+
+
 let myNumber = Int(possibleNumber) // aqui myNumber é um inteiro opicional
 
 if let myNumber = myNumber {
     // aqui myNumber é um inteiro não opicional
     print("Meu numero é \(myNumber)")
     }
-/*
-A PArtir do swift 5.7 pode usar a ortografia mais curta
+// A Partir do swift 5.7 pode usar a ortografia mais curta
 if let myNumber{
 print("Meu numero é \(myNumber)")
-} */
+} 
 
 // ambas as expressões abaixo funcionam
 
@@ -64,12 +64,12 @@ if let firstNumber = Int("4"), let secondNumber = Int("42"), firstNumber < secon
     print("\(firstNumber) < \(secondNumber) < 100")    
 }
 
-if let firstNumber = int("4"){
+if let firstNumber = Int("4"){
     if let secondNumber = Int("42"){
         firstNumber < secondNumber && secondNumber < 100 {
             print("\(firstNumber) < \(secondNumber) < 100") 
     }
-}
+}}
 
 // Unwrapped Optional Implicitamente
 
